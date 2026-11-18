@@ -1,5 +1,9 @@
 # 洛洛 · 桌面陪伴脚本
 
+Deepseek Harness写的喵
+
+给自己来个提前99天的成人礼嘻嘻~~
+
 给 [MateEngine](https://store.steampowered.com/app/2647760/MateEngine/) 里的 VRM 角色接上一个「会说人话」的灵魂：
 定时主动开口、可以打字聊天、有长期记忆、有情绪、能记闹钟。
 
@@ -11,14 +15,14 @@
 
 ## 它是什么
 
-| 文件 | 作用 |
-| --- | --- |
-| `luoluo-proactive.ps1` | 主程序：主动说话、聊天窗口、记忆、闹钟、调度循环 |
-| `LuoluoPanel3.cs` + `luoluo-panel.ps1` + `launch-panel.vbs` | 桌面小面板（启动/暂停/闹钟/叫她） |
-| `watchdog.ps1` | 看门狗：调度器挂了自动拉起 |
-| `subtitle-watch.ps1` | 可选：读 B 站窗口字幕，让她知道你在看什么 |
-| `im-watch.ps1` | 可选：读 QQ 聊天区，让她知道你刚在跟谁聊 |
-| `data-sample/` | 示例数据文件，复制到 `data/` 改成自己的 |
+| 文件                                                          | 作用                       |
+| ----------------------------------------------------------- | ------------------------ |
+| `luoluo-proactive.ps1`                                      | 主程序：主动说话、聊天窗口、记忆、闹钟、调度循环 |
+| `LuoluoPanel3.cs` + `luoluo-panel.ps1` + `launch-panel.vbs` | 桌面小面板（启动/暂停/闹钟/叫她）       |
+| `watchdog.ps1`                                              | 看门狗：调度器挂了自动拉起            |
+| `subtitle-watch.ps1`                                        | 可选：读 B 站窗口字幕，让她知道你在看什么   |
+| `im-watch.ps1`                                              | 可选：读 QQ 聊天区，让她知道你刚在跟谁聊   |
+| `data-sample/`                                              | 示例数据文件，复制到 `data/` 改成自己的 |
 
 ---
 
@@ -51,7 +55,6 @@
 
 - `mateEngineData`：留空就用默认位置；放在别处才需要填
 - `yejinPrompt`：第二个人格（可选，不用就留空）
-
 4. 双击 `launch-panel.vbs` 开面板；或直接跑：
 
 ```powershell
@@ -82,13 +85,13 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\luoluo-proactive.ps1
 
 ## 她怎么记住你
 
-| 文件 | 是什么 | 会不会自动变 |
-| --- | --- | --- |
-| `data\facts.txt` | 你写的固定事实，**每次都进提示词** | 不会（你手改） |
-| `data\memory.json` | 自动总结的 8 条长期记忆 | 会（最多 40 分钟一次） |
-| `data\chat` | 最近 10 句对话 | 会 |
-| `data\myphrases.txt` | 你想让她学的口头禅 | 不会 |
-| `data\memes.txt` | 梗库，22% 概率用一个 | 不会 |
+| 文件                   | 是什么                 | 会不会自动变        |
+| -------------------- | ------------------- | ------------- |
+| `data\facts.txt`     | 你写的固定事实，**每次都进提示词** | 不会（你手改）       |
+| `data\memory.json`   | 自动总结的 8 条长期记忆       | 会（最多 40 分钟一次） |
+| `data\chat`          | 最近 10 句对话           | 会             |
+| `data\myphrases.txt` | 你想让她学的口头禅           | 不会            |
+| `data\memes.txt`     | 梗库，22% 概率用一个        | 不会            |
 
 **记不住某件事** → 写进 `facts.txt`，最稳。
 
@@ -114,3 +117,5 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\luoluo-proactive.ps1
 ## 许可
 
 脚本部分随便用、随便改；人设与故事（不在本仓库）版权归原作者，不随仓库分发。
+
+玩的开心喵~~
