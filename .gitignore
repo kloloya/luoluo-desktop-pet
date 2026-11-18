@@ -1,0 +1,6 @@
+data/
+*.log
+config.json
+publish/
+*.bak
+'bubble*'
